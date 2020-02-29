@@ -10,8 +10,8 @@ export class TodoService {
     return this.http.post('...', todo);
   }
 
-  getTodos() {
-    return this.http.get('...');
+  getTodos(){
+    return this.http.get<any[]>('...');
   }
 
   delete(id) {
