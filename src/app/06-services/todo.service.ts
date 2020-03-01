@@ -1,6 +1,5 @@
 
 import { HttpClient } from '@angular/common/http';
-import 'rxjs/add/operator/map';
 
 export class TodoService {
   constructor(private http: HttpClient) {
@@ -11,7 +10,7 @@ export class TodoService {
   }
 
   getTodos() {
-    return this.http.get<any[]>('...');
+    return this.http.get('...');
   }
 
   delete(id) {
