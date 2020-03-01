@@ -10,7 +10,7 @@ export class TodoService {
     return this.http.post('...', todo);
   }
 
-  getTodos(){
+  getTodos() {
     return this.http.get<any[]>('...');
   }
 
