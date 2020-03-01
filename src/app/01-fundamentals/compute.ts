@@ -1,8 +1,8 @@
 
-export function compute(number) {
-  if (number < 0) {
+export function compute(inputNumber) {
+  if (inputNumber < 0) {
     return 0;
   }
 
-  return number + 1;
+  return inputNumber + 1;
 }
